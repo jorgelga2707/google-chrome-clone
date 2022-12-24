@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav{
+    display: flex;
+}
+header nav  .nav-right-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a{
+    color: black;
+    margin-right: 1rem;
+}
+nav .nav-right-section a:hover{
+    color: #00CF95;
+}
+nav .nav-right-section .menu-icon{
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat; /*Cuando la imagen es muy grande se repite hasta llenar el espacio, no repeat detiene ello*/
+    background-position: center; /*Centra la imagen*/
+    background-size: contain; /* Hace que la imagen sea del tamano del contenedor*/
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+main{
+    margin-top: 11rem;
+    text-align: center;
+    width: 100%;
+}
+main .main-logo{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+}
+main .main-logo img{
+    width: 35%;
+}
+main .main-input{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+main .main-input-container{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10rem;
+    border: 0.2rem solid #dfe1e5;
+    display: flex;
+    align-items: center;
+}
+main .main-input input{
+    width: 90%;
+    height: 4rem;
+    margin: 0 auto;
+    border: none;
+    outline: none; /*Nos sirve para quitar el borde generado cuando damos click a un input*/
+}
+main .main-input-container:hover{
+    box-shadow: 0 0.1rem 0.6rem 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+main .main-input .micro-icon{
+    background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+main .main-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+main .main-buttons .button-element1{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+main .main-buttons .button-element2{
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+main .main-buttons button{
+    display: flex;
+    width: 40%;
+    height: 3.9rem;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+main .main-buttons button:hover {
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0px 0.1rem 0.1rem rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+}
+/*  aqui inicia el footer  */
+footer{
+    width: 100%;
+    height: 9rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.7rem;
+    background-color: #f2f2f2;
+    border-top: 0.1rem solid #e4e4e4;
+}
+footer ul{
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    margin: 1rem;
+    color: #5f6368;
+}
+footer ul li a:hover{
+    color: #00CF95;
+}
+/* media queries  */
+@media screen and (max-width: 876px) {
+    header{
+        height: 5rem;
+    }
+    nav .nav-right-section a{
+        font-size: 1rem;
+    }
+    nav .nav-right-section img{
+        width: 20px;
+        height: 20px;
+    }
+    main .main-logo img{
+        width: 45%;
+    }
+    main .main-input{
+        width: 90%;
+    }
+    main .main-input input{
+        width: 85%;
+        height: 3rem;
+    }
+    main .main-buttons button{
+        width: 45%;
+        font-size: 0.9rem;
+        justify-content: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer{
+        font-size: 0.9rem;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-left{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-left li a{
+        display: flex;
+        text-align: center;
+    }
+    .footer-right{
+        width: 100%;
+    }
+}
